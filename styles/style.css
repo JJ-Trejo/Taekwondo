@@ -1,0 +1,121 @@
+.encabezado{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.encabezado__container{
+    display: flex;
+    justify-content: space-between; /*Separa los elementos*/
+    align-items: center; /*Alinea verticalmente*/
+    max-width: 1200px;
+    margin: 0px auto; /*Centra los elementos horizontalmente*/
+}
+
+.encabezado--logo{
+    width: 100px;
+}
+
+.encabezado__navegacion--lista{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+.titulo,
+.academias__titulo{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.container__descripcion{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
+.container__descripcion--texto{
+    max-width: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.academias__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.academias__titulo{
+    text-align: center;
+}
+
+.academias__lista{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ubicacion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubicacion__texto{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.ubicacion__mapa {
+    position: relative;
+    width: 100%; /* El contenedor del mapa ocupará todo el ancho */
+    height: 50vh; /* El contenedor ocupará el 50% de la altura de la ventana */
+    overflow: hidden;
+}
+
+.ubicacion__mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* El mapa ocupará todo el ancho del contenedor */
+    height: 100%; /* El mapa se ajustará a la altura del contenedor */
+    border: 0; /* Sin borde */
+}
+
+/* .ubicacion__mapa {
+    position: relative;
+    width: 100%; El contenedor del mapa ocupará todo el ancho
+    padding-bottom: 56.25%; Proporción 16:9 (ancho/alto)
+    height: 0; Inicialmente sin altura
+    overflow: hidden;
+}
+
+.ubicacion__mapa iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; El mapa ocupará todo el ancho del contenedor
+    height: 100%; El mapa se ajustará a la altura del contenedor
+    border: 0; Sin borde
+} */
