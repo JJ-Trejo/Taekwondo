@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado__container">
+            <a href="./index.html" aria-label="Ir a la página de inicio">
+                <img class="encabezado--logo" src="./assets/logohd-fondo.png" alt="Logo Moopalkwan">
+            </a>
+            <ul class="encabezado__navegacion--lista">
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a ></li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto">
+            <header class="contacto__titulo">
+                <h3 class="titulo">Contacto</h3>
+                <p class="contacto__descripcion--texto">¿Tienes alguna duda? <br>
+                    Complete el siguiente formulario y me pondré en contacto con usted lo antes posible
+                </p>
+            </header>
+            <form action="" class="contacto__formulario">
+                <img src="./assets/imagen_phone.png" alt="">
+                <ul class="contacto__formulario--datos">
+                    <li class="contacto_elemento">
+                        <label for="formulario__nombre" class="label_nombre">Nombre</label>
+                        <input type="text" placeholder="Tu nombre" id="formulario__nombre">
+                    </li>
+                    <li class="contacto_elemento">
+                        <label for="formulario__correo" class="label_email">E-mail</label>
+                        <input type="text" placeholder="E-mail" id="formulario__correo">
+                    </li>
+                    <li class="contacto_elemento">
+                        <label for="formulario__asunto" class="label_asunto">Asunto</label>
+                        <input type="text" placeholder="Asunto" id="formulario__asunto">
+                    </li>
+                    </li>
+                    <li class="contacto_elemento">
+                        <label for="formulario__mensaje" class="label_mensaje">Mensaje</label>
+                        <textarea placeholder="Mensaje" id="formulario__mensaje"></textarea>
+                    </li>
+
+                    <div class="boton_contacto">
+                        <button class="formulario--boton">
+                            Enviar mensaje!
+                        </button>
+                    </div>
+                </ul>
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Developed by J.J.Trejo</p>
+    </footer>
+</body>
+
+</html>
